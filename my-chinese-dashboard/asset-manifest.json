@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/my-chinese-dashboard/static/css/main.ad236cf0.css",
-    "main.js": "/my-chinese-dashboard/static/js/main.c588098d.js",
+    "main.css": "/my-chinese-dashboard/static/css/main.afdaaaa8.css",
+    "main.js": "/my-chinese-dashboard/static/js/main.e87ba52c.js",
+    "static/media/logo.svg": "/my-chinese-dashboard/static/media/logo.1998a580aaadeabac202fd3e042c037f.svg",
     "index.html": "/my-chinese-dashboard/index.html",
-    "static/media/logo.svg": "/my-chinese-dashboard/static/media/logo.3aef8727fdbcf9af1fe0dd80404cdb4e.svg",
-    "main.ad236cf0.css.map": "/my-chinese-dashboard/static/css/main.ad236cf0.css.map",
-    "main.c588098d.js.map": "/my-chinese-dashboard/static/js/main.c588098d.js.map"
+    "main.afdaaaa8.css.map": "/my-chinese-dashboard/static/css/main.afdaaaa8.css.map",
+    "main.e87ba52c.js.map": "/my-chinese-dashboard/static/js/main.e87ba52c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad236cf0.css",
-    "static/js/main.c588098d.js"
+    "static/css/main.afdaaaa8.css",
+    "static/js/main.e87ba52c.js"
   ]
 }

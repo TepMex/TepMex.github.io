@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1"
+  xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#DE2910" />
+
+  <!-- Main star -->
+  <g transform="translate(100, 100) scale(0.8) rotate(23)">
+    <path d="M0,-30 L6.9,9.3 L28.5,-13.5 L9.3,6.9 L30,0 L9.3,-6.9 L28.5,13.5 L6.9,-9.3 L0,30 L-6.9,-9.3 L-28.5,13.5 L-9.3,-6.9 L-30,0 L-9.3,6.9 L-28.5,-13.5 L-6.9,9.3 Z" fill="#FFDE00" />
+  </g>
+
+  <!-- Small stars -->
+  <g transform="translate(100, 100) rotate(-15)">
+    <!-- Top star -->
+    <g transform="translate(-45, -45) rotate(30) scale(0.3)">
+      <path d="M0,-30 L6.9,9.3 L28.5,-13.5 L9.3,6.9 L30,0 L9.3,-6.9 L28.5,13.5 L6.9,-9.3 L0,30 L-6.9,-9.3 L-28.5,13.5 L-9.3,-6.9 L-30,0 L-9.3,6.9 L-28.5,-13.5 L-6.9,9.3 Z" fill="#FFDE00" />
+    </g>
+    <!-- Right star -->
+    <g transform="translate(35, -25) rotate(15) scale(0.3)">
+      <path d="M0,-30 L6.9,9.3 L28.5,-13.5 L9.3,6.9 L30,0 L9.3,-6.9 L28.5,13.5 L6.9,-9.3 L0,30 L-6.9,-9.3 L-28.5,13.5 L-9.3,-6.9 L-30,0 L-9.3,6.9 L-28.5,-13.5 L-6.9,9.3 Z" fill="#FFDE00" />
+    </g>
+    <!-- Bottom star -->
+    <g transform="translate(15, 40) rotate(-15) scale(0.3)">
+      <path d="M0,-30 L6.9,9.3 L28.5,-13.5 L9.3,6.9 L30,0 L9.3,-6.9 L28.5,13.5 L6.9,-9.3 L0,30 L-6.9,-9.3 L-28.5,13.5 L-9.3,-6.9 L-30,0 L-9.3,6.9 L-28.5,-13.5 L-6.9,9.3 Z" fill="#FFDE00" />
+    </g>
+  </g>
+
+  <!-- Modern app-style shadow effect -->
+  <circle cx="100" cy="100" r="90" fill="rgba(0,0,0,0.1)" />
+
+  <!-- Subtle inner glow -->
+  <circle cx="100" cy="100" r="85" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none" />
+</svg>
