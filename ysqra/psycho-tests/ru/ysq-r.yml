@@ -1,0 +1,624 @@
+id: YSQR_ru
+name: Ранние дезадаптивные схемы Джеффри Янга
+description: YSQ-R Ранние дезадаптивные схемы Джеффри Янга (усовершенстованный, пересмотренный)
+
+randomize: true
+
+# EDE Emotional Deprivation
+# ABA Abandonment
+# MIS Mistrust
+# SIS Social Isolation
+# DEF Defectiveness
+# FAL Failure
+# DEP Dependence / Incompetence
+# VUH Vulnerability to Harm
+# EMS Enmeshment
+# SJG Subjugation
+# SAC Self-Sacrifice
+# LOS Fear of Losing Control
+# ECO Emotional Constriction
+# UST Unrelenting Standards
+# ENT Entitlement
+# ISC Insufficient Self-Control
+# SEE Approval Seeking
+# NEG Negativity
+# PUS Punitiveness (Self)
+# PUO Punitiveness (Other)
+
+overrides:
+  answer: &default_answer
+    type: scale
+    range: [1, 6]
+    variable: SEE
+    options:
+      - Совершенно не обо мне
+      - Скорее не обо мне
+      - Скорее обо мне
+      - Умеренно описывает меня
+      - По большей части описывает меня
+      - Полностью описывает меня
+
+questions:
+  - question: Мне не хватало любви и внимания.
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: В большинстве случаев у меня не было человека, на которого можно положиться в плане советов и эмоциональной поддержки.
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Бóльшую часть жизни у меня не было того, кто хотел бы сблизиться со мной и проводить со мной много времени.
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Бóльшую часть жизни я не чувствовал(а), что я особенный(ая) для кого-то.
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Редко у меня был сильный человек, который мог бы дать мне полезный совет или направление, когда я не уверен(а), что делать.
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Я беспокоюсь, что люди, к которым я привязан(а), оставят меня или покинут.
+    answer:
+      <<: *default_answer
+      variable: ABA
+
+  - question: Я не верю, что важные отношения продлятся; я ожидаю, что они закончатся.
+    answer:
+      <<: *default_answer
+      variable: ABA
+
+  - question: Я чувствую зависимость от партнеров, которые не могут быть рядом со мной в рамках серьезных отношений.
+    answer:
+      <<: *default_answer
+      variable: ABA
+
+  - question: Я расстраиваюсь, когда кто-то оставляет меня одного(одну), даже на короткое время.
+    answer:
+      <<: *default_answer
+      variable: ABA
+
+  - question: Я не могу позволить себе сблизиться с другими людьми, потому что не уверен(а), что они всегда будут рядом.
+    answer:
+      <<: *default_answer
+      variable: ABA
+
+  - question: >
+      Близкие люди были очень непредсказуемы: то они доступны и добры, то злы, расстроены, поглощены собой, конфликтуют и т.д.
+    answer:
+      <<: *default_answer
+      variable: ABA
+
+  - question: Я так нуждаюсь в других, что боюсь их потерять.
+    answer:
+      <<: *default_answer
+      variable: ABA
+
+  - question: Я не могу быть собой или выражать то, что чувствую, иначе люди уйдут.
+    answer:
+      <<: *default_answer
+      variable: ABA
+
+  - question: Я чувствую, что не могу расслабиться в присутствии других, иначе они намеренно причинят мне боль.
+    answer:
+      <<: *default_answer
+      variable: MIS
+
+  - question: Рано или поздно меня предадут.
+    answer:
+      <<: *default_answer
+      variable: MIS
+
+  - question: Мне очень трудно доверять людям.
+    answer:
+      <<: *default_answer
+      variable: MIS
+
+  - question: Я устраиваю «проверки» для других, чтобы убедиться, что они говорят правду и доброжелательны.
+    answer:
+      <<: *default_answer
+      variable: MIS
+
+  - question: >
+      Я следую убеждению: «Контролируй или будешь контролируемым».
+    answer:
+      <<: *default_answer
+      variable: MIS
+
+  - question: Я фундаментально отличаюсь от других людей.
+    answer:
+      <<: *default_answer
+      variable: SIS
+
+  - question: Я не принадлежу никому; я одиночка.
+    answer:
+      <<: *default_answer
+      variable: SIS
+
+  - question: Я всегда чувствую себя чужим(ей) в группах.
+    answer:
+      <<: *default_answer
+      variable: SIS
+
+  - question: Меня никто по-настоящему не понимает.
+    answer:
+      <<: *default_answer
+      variable: SIS
+
+  - question: Иногда я чувствую себя инопланетянином.
+    answer:
+      <<: *default_answer
+      variable: SIS
+
+  - question: Никто из тех, кого я желаю, не захочет остаться рядом, если узнает меня настоящего(ую).
+    answer:
+      <<: *default_answer
+      variable: DEF
+
+  - question: Я изначально ущербен(на) и неполноценен(на).
+    answer:
+      <<: *default_answer
+      variable: DEF
+
+  - question: Я чувствую, что меня нельзя любить.
+    answer:
+      <<: *default_answer
+      variable: DEF
+
+  - question: Я слишком неприемлем(а) в своих базовых проявлениях, чтобы открываться другим.
+    answer:
+      <<: *default_answer
+      variable: DEF
+
+  - question: Когда я нравлюсь людям, мне кажется, что я их обманываю.
+    answer:
+      <<: *default_answer
+      variable: DEF
+
+  - question: Я не понимаю, как кто-то может меня любить.
+    answer:
+      <<: *default_answer
+      variable: DEF
+
+  - question: Почти ничто из того, что я делаю на работе (или учебе), не сравнится с тем, что делают другие.
+    answer:
+      <<: *default_answer
+      variable: FAL
+
+  - question: Большинство людей более способны, чем я, в профессиональной (учебной) деятельности.
+    answer:
+      <<: *default_answer
+      variable: FAL
+
+  - question: Я неудачник.
+    answer:
+      <<: *default_answer
+      variable: FAL
+
+  - question: Я менее талантлив(а), чем большинство людей в работе (учебе).
+    answer:
+      <<: *default_answer
+      variable: FAL
+
+  - question: Мне часто стыдно рядом с другими, потому что я не соответствую их достижениям.
+    answer:
+      <<: *default_answer
+      variable: FAL
+
+  - question: Я часто сравниваю свои успехи с чужими и чувствую, что другие намного успешнее.
+    answer:
+      <<: *default_answer
+      variable: FAL
+
+  - question: Я не чувствую, что способен(на) справляться с повседневной жизнью самостоятельно.
+    answer:
+      <<: *default_answer
+      variable: DEP
+
+  - question: Я верю, что другие позаботятся обо мне лучше, чем я сам(а).
+    answer:
+      <<: *default_answer
+      variable: DEP
+
+  - question: Мне сложно браться за новые задачи вне работы без чьего-либо руководства.
+    answer:
+      <<: *default_answer
+      variable: DEP
+
+  - question: Я проваливаю всё, за что берусь, даже вне работы (учебы).
+    answer:
+      <<: *default_answer
+      variable: DEP
+
+  - question: Если я буду полагаться на свое мнение в бытовых ситуациях, то приму неверное решение.
+    answer:
+      <<: *default_answer
+      variable: DEP
+
+  - question: Мне нужен кто-то, кто даст мне совет по практическим вопросам.
+    answer:
+      <<: *default_answer
+      variable: DEP
+
+  - question: В повседневных обязанностях я чувствую себя скорее ребенком, чем взрослым.
+    answer:
+      <<: *default_answer
+      variable: DEP
+
+  - question: Ответственность повседневной жизни подавляет меня.
+    answer:
+      <<: *default_answer
+      variable: DEP
+
+  - question: Я чувствую, что катастрофа (природная, криминальная, финансовая, медицинская) может случиться в любой момент.
+    answer:
+      <<: *default_answer
+      variable: VUH
+
+  - question: Я боюсь нападения.
+    answer:
+      <<: *default_answer
+      variable: VUH
+
+  - question: Я предпринимаю чрезмерные меры, чтобы избежать болезней или травм.
+    answer:
+      <<: *default_answer
+      variable: VUH
+
+  - question: Я беспокоюсь, что у меня серьезное заболевание, даже если врачи его не диагностировали.
+    answer:
+      <<: *default_answer
+      variable: VUH
+
+  - question: >
+      Я много переживаю о плохом в мире: преступность, загрязнение и т.д.
+    answer:
+      <<: *default_answer
+      variable: VUH
+
+  - question: Я чувствую, что мир — опасное место.
+    answer:
+      <<: *default_answer
+      variable: VUH
+
+  - question: Мы с родителем(-ями) слишком вовлечены в жизни и проблемы друг друга.
+    answer:
+      <<: *default_answer
+      variable: EMS
+
+  - question: Нам трудно скрывать личные детали друг от друга без чувства вины или предательства.
+    answer:
+      <<: *default_answer
+      variable: EMS
+
+  - question: Мы с родителем(-ями) должны общаться почти ежедневно, иначе чувствуем вину, обиду или одиночество.
+    answer:
+      <<: *default_answer
+      variable: EMS
+
+  - question: Часто мне кажется, что у меня нет отдельной от родителей/партнера идентичности.
+    answer:
+      <<: *default_answer
+      variable: EMS
+
+  - question: Мне сложно сохранять дистанцию с близкими; у меня нет четкого ощущения себя.
+    answer:
+      <<: *default_answer
+      variable: EMS
+
+  - question: У меня часто нет личного пространства в отношениях с родителями/партнером.
+    answer:
+      <<: *default_answer
+      variable: EMS
+
+  - question: Я чувствую, что родители будут очень обижены, если я буду жить отдельно.
+    answer:
+      <<: *default_answer
+      variable: EMS
+
+  - question: Я верю, что если буду делать то, что хочу, это принесет проблемы.
+    answer:
+      <<: *default_answer
+      variable: SJG
+
+  - question: В отношениях я позволяю другому доминировать.
+    answer:
+      <<: *default_answer
+      variable: SJG
+
+  - question: Я всегда позволял(а) другим решать за меня, поэтому не знаю, чего хочу сам(а).
+    answer:
+      <<: *default_answer
+      variable: SJG
+
+  - question: Я много беспокоюсь о том, чтобы угодить другим, чтобы они не отвергли меня.
+    answer:
+      <<: *default_answer
+      variable: SJG
+
+  - question: Я прилагаю больше усилий, чем большинство, чтобы избежать конфликтов.
+    answer:
+      <<: *default_answer
+      variable: SJG
+
+  - question: Я отдаю другим больше, чем получаю взамен.
+    answer:
+      <<: *default_answer
+      variable: SAC
+
+  - question: Обычно это я забочусь о близких.
+    answer:
+      <<: *default_answer
+      variable: SAC
+
+  - question: Как бы я ни был(а) занят(а), я всегда найду время для других.
+    answer:
+      <<: *default_answer
+      variable: SAC
+
+  - question: Я всегда выслушиваю чужие проблемы.
+    answer:
+      <<: *default_answer
+      variable: SAC
+
+  - question: Другие видят, что я слишком много делаю для других и мало — для себя.
+    answer:
+      <<: *default_answer
+      variable: SAC
+
+  - question: Сколько бы я ни отдавал(а), мне кажется, что этого недостаточно.
+    answer:
+      <<: *default_answer
+      variable: SAC
+
+  - question: Я боюсь потерять контроль над своими действиями.
+    answer:
+      <<: *default_answer
+      variable: LOS
+
+  - question: Я боюсь, что могу серьезно навредить кому-то физически или эмоционально, если выпущу гнев.
+    answer:
+      <<: *default_answer
+      variable: LOS
+
+  - question: Я чувствую, что должен(на) контролировать эмоции и импульсы, иначе случится что-то плохое.
+    answer:
+      <<: *default_answer
+      variable: LOS
+
+  - question: Во мне накапливается много непроявленного гнева и обиды.
+    answer:
+      <<: *default_answer
+      variable: LOS
+
+  - question: Я слишком зажат(а), чтобы проявлять позитивные чувства (например, нежность, заботу).
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Мне стыдно выражать свои чувства другим.
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Мне трудно быть теплым(ой) и спонтанным(ой).
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Я так контролирую себя, что люди считают меня бесчувственным(ой).
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Люди видят меня эмоционально скованным(ой).
+    answer:
+      <<: *default_answer
+      variable: ECO
+
+  - question: Я должен(на) быть лучшим(ей) в большинстве дел; я не приемлю второе место.
+    answer:
+      <<: *default_answer
+      variable: UST
+
+  - question: Я стремлюсь к идеальному порядку почти во всем.
+    answer:
+      <<: *default_answer
+      variable: UST
+
+  - question: У меня столько обязанностей, что нет времени расслабиться.
+    answer:
+      <<: *default_answer
+      variable: UST
+
+  - question: Я должен(на) выполнить все свои обязательства.
+    answer:
+      <<: *default_answer
+      variable: UST
+
+  - question: Я часто жертвую удовольствием и счастьем ради своих стандартов.
+    answer:
+      <<: *default_answer
+      variable: UST
+
+  - question: Я не могу простить себе ошибки или найти им оправдание.
+    answer:
+      <<: *default_answer
+      variable: UST
+
+  - question: Я всегда должен(на) быть первым(ой) по результатам.
+    answer:
+      <<: *default_answer
+      variable: UST
+
+  - question: Мне очень трудно принять «нет» в ответ, когда я чего-то хочу.
+    answer:
+      <<: *default_answer
+      variable: ENT
+
+  - question: Я ненавижу ограничения и препятствия в достижении желаемого.
+    answer:
+      <<: *default_answer
+      variable: ENT
+
+  - question: Я считаю, что мне не обязательно следовать общим правилам и нормам.
+    answer:
+      <<: *default_answer
+      variable: ENT
+
+  - question: Я часто так поглощен(а) своими приоритетами, что не уделяю времени семье или друзьям.
+    answer:
+      <<: *default_answer
+      variable: ENT
+
+  - question: Люди часто говорят, что я контролирую способы выполнения задач.
+    answer:
+      <<: *default_answer
+      variable: ENT
+
+  - question: Я не терплю, когда мне указывают, что делать.
+    answer:
+      <<: *default_answer
+      variable: ENT
+
+  - question: Я не могу заставить себя выполнять рутинные или скучные задачи.
+    answer:
+      <<: *default_answer
+      variable: ISC
+
+  - question: Я часто действую импульсивно, что приводит к проблемам или ранит других.
+    answer:
+      <<: *default_answer
+      variable: ISC
+
+  - question: Мне быстро наскучивает.
+    answer:
+      <<: *default_answer
+      variable: ISC
+
+  - question: Если задача сложная, я обычно не довожу ее до конца.
+    answer:
+      <<: *default_answer
+      variable: ISC
+
+  - question: Я не могу заставить себя делать то, что мне не нравится, даже ради собственного блага.
+    answer:
+      <<: *default_answer
+      variable: ISC
+
+  - question: Я редко выполняю свои решения.
+    answer:
+      <<: *default_answer
+      variable: ISC
+
+  - question: Я часто делаю что-то импульсивно, о чем потом жалею.
+    answer:
+      <<: *default_answer
+      variable: ISC
+
+  - question: Для меня важно нравиться почти всем, кого я знаю.
+    answer:
+      <<: *default_answer
+      variable: SEE
+
+  - question: Я меняю себя в зависимости от окружения, чтобы понравиться.
+    answer:
+      <<: *default_answer
+      variable: SEE
+
+  - question: Моя самооценка зависит от мнения других.
+    answer:
+      <<: *default_answer
+      variable: SEE
+
+  - question: Даже если человек мне не нравится, я хочу, чтобы он(а) ко мне хорошо относился(ась).
+    answer:
+      <<: *default_answer
+      variable: SEE
+
+  - question: Если я не получаю много внимания, я чувствую себя менее значимым(ой).
+    answer:
+      <<: *default_answer
+      variable: SEE
+
+  - question: >
+      Лучше перестраховаться: что-то почти всегда идет не так.
+    answer:
+      <<: *default_answer
+      variable: NEG
+
+  - question: Я боюсь, что неверное решение приведет к катастрофе.
+    answer:
+      <<: *default_answer
+      variable: NEG
+
+  - question: Я зацикливаюсь на мелких решениях, так как ошибка кажется фатальной.
+    answer:
+      <<: *default_answer
+      variable: NEG
+
+  - question: Я предпочитаю считать, что всё провалится, чтобы не разочароваться.
+    answer:
+      <<: *default_answer
+      variable: NEG
+
+  - question: Я склонен(на) к пессимизму.
+    answer:
+      <<: *default_answer
+      variable: NEG
+
+  - question: Если другие слишком увлекаются чем-то, я предупреждаю их о возможных рисках.
+    answer:
+      <<: *default_answer
+      variable: NEG
+
+  - question: Если я ошибаюсь, я заслуживаю наказания.
+    answer:
+      <<: *default_answer
+      variable: PUS
+
+  - question: Нет оправдания моим ошибкам.
+    answer:
+      <<: *default_answer
+      variable: PUS
+
+  - question: Если я не выполню работу, я должен(на) страдать от последствий.
+    answer:
+      <<: *default_answer
+      variable: PUS
+
+  - question: Неважно, почему я ошибся(лась); я должен(на) заплатить за это.
+    answer:
+      <<: *default_answer
+      variable: PUS
+
+  - question: Я плохой человек, заслуживающий наказания.
+    answer:
+      <<: *default_answer
+      variable: PUS
+
+  - question: Люди, которые не «тянут свою ношу», должны быть наказаны.
+    answer:
+      <<: *default_answer
+      variable: PUO
+
+  - question: Я редко принимаю чужие оправдания. Они просто не хотят нести ответственность.
+    answer:
+      <<: *default_answer
+      variable: PUO
+
+  - question: Я долго помню обиды, даже после извинений.
+    answer:
+      <<: *default_answer
+      variable: PUO
+
+  - question: Я злюсь, когда люди оправдываются или винят других в своих проблемах.
+    answer:
+      <<: *default_answer
+      variable: PUO
