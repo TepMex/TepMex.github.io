@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>habits-tgapp</title>
-    <script type="module" crossorigin src="./assets/index-LXUO-A63.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DQ3P1g1z.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+    <title>Habits</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      // Ensure hash router works with Telegram query params
+      if (window.location.search && !window.location.hash) {
+        window.location.replace(window.location.pathname + window.location.search + '#/');
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-DLfBMBse.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DNlBO4zq.css">
   </head>
   <body>
     <div id="root"></div>
