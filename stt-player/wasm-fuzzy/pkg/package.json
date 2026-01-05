@@ -1,0 +1,15 @@
+{
+  "name": "wasm-fuzzy",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "wasm_fuzzy_bg.wasm",
+    "wasm_fuzzy.js",
+    "wasm_fuzzy.d.ts"
+  ],
+  "main": "wasm_fuzzy.js",
+  "types": "wasm_fuzzy.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

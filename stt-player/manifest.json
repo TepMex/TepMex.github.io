@@ -1,0 +1,19 @@
+{
+  "name": "Language Learning Audio Player",
+  "short_name": "Audio Player",
+  "description": "Progressive Web App for language learning with audio transcription and text synchronization",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
