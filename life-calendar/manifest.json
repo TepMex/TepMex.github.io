@@ -1,0 +1,16 @@
+{
+  "name": "Life Calendar",
+  "short_name": "Life Calendar",
+  "description": "Track your daily events with a GitHub-style calendar",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "icons": [
+    {
+      "src": "vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
