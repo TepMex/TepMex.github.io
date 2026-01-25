@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Red seal square -->
+  <rect x="6" y="6" width="52" height="52" rx="4" fill="#C62828"/>
+
+  <!-- Centered Hanzi 写 -->
+  <text
+    x="32"
+    y="32"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-size="36"
+    fill="#FFFFFF"
+    font-family="KaiTi, STKaiti, serif"
+    font-weight="bold">
+    写
+  </text>
+</svg>
