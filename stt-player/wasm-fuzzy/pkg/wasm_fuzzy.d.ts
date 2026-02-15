@@ -1,6 +1,16 @@
 /* tslint:disable */
 /* eslint-disable */
 
+export class TextLocator {
+  free(): void;
+  [Symbol.dispose](): void;
+  preprocess(book_text: string): void;
+  serialize(): string;
+  constructor();
+  query(transcript_snippet: string): any;
+  static from_json(json: string): TextLocator;
+}
+
 export function are_words_similar(word1: string, word2: string, threshold: number): boolean;
 
 export function calculate_combined_similarity(transcript: string, chunk: string): number;
@@ -21,12 +31,18 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
+  readonly __wbg_textlocator_free: (a: number, b: number) => void;
   readonly are_words_similar: (a: number, b: number, c: number, d: number, e: number) => number;
   readonly calculate_combined_similarity: (a: number, b: number, c: number, d: number) => number;
   readonly levenshtein_distance: (a: number, b: number, c: number, d: number) => number;
   readonly n_gram_similarity: (a: number, b: number, c: number, d: number, e: number) => number;
   readonly normalize_text: (a: number, b: number) => [number, number];
   readonly string_similarity: (a: number, b: number, c: number, d: number) => number;
+  readonly textlocator_from_json: (a: number, b: number) => number;
+  readonly textlocator_new: () => number;
+  readonly textlocator_preprocess: (a: number, b: number, c: number) => void;
+  readonly textlocator_query: (a: number, b: number, c: number) => any;
+  readonly textlocator_serialize: (a: number) => [number, number];
   readonly word_level_similarity: (a: number, b: number, c: number, d: number) => number;
   readonly word_to_phrase_similarity: (a: number, b: number, c: number, d: number) => number;
   readonly __wbindgen_externrefs: WebAssembly.Table;

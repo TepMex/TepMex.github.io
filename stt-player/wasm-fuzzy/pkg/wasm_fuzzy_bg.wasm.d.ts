@@ -1,12 +1,18 @@
 /* tslint:disable */
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
+export const __wbg_textlocator_free: (a: number, b: number) => void;
 export const are_words_similar: (a: number, b: number, c: number, d: number, e: number) => number;
 export const calculate_combined_similarity: (a: number, b: number, c: number, d: number) => number;
 export const levenshtein_distance: (a: number, b: number, c: number, d: number) => number;
 export const n_gram_similarity: (a: number, b: number, c: number, d: number, e: number) => number;
 export const normalize_text: (a: number, b: number) => [number, number];
 export const string_similarity: (a: number, b: number, c: number, d: number) => number;
+export const textlocator_from_json: (a: number, b: number) => number;
+export const textlocator_new: () => number;
+export const textlocator_preprocess: (a: number, b: number, c: number) => void;
+export const textlocator_query: (a: number, b: number, c: number) => any;
+export const textlocator_serialize: (a: number) => [number, number];
 export const word_level_similarity: (a: number, b: number, c: number, d: number) => number;
 export const word_to_phrase_similarity: (a: number, b: number, c: number, d: number) => number;
 export const __wbindgen_externrefs: WebAssembly.Table;
