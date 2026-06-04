@@ -1,0 +1,6 @@
+# Apache (shared hosting) — block indexing on staging / dev deploy.
+# For production: replace with .htaccess.prod (see docs/seo-deploy.md).
+
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet"
+</IfModule>

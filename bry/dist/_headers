@@ -1,0 +1,5 @@
+# Netlify / Cloudflare Pages — extra noindex signal for staging.
+# For production: replace with _headers.prod (see docs/seo-deploy.md).
+
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet

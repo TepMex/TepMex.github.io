@@ -1,0 +1,5 @@
+# Staging / public dev hosting — block all crawlers.
+# For production: replace with robots.txt.prod (see docs/seo-deploy.md).
+
+User-agent: *
+Disallow: /
